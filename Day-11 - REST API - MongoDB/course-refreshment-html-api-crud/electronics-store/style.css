@@ -1,0 +1,130 @@
+*{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+body{
+    background-color:rgb(255, 255, 255);
+}
+nav{
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    /*font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;*/
+    font-weight: bold;
+    text-align: center;
+    padding-top: 18px;
+    border: 1px solid black;
+}
+
+nav a{
+    padding-right: 60px;
+    color: black;
+    text-decoration: none;
+    text-shadow: 2px 2px 6px rgb(0, 0, 0);
+    opacity: 0.7;
+}
+nav a:hover{
+
+   opacity: 1;
+ 
+}
+.btn:hover {opacity: 1}
+
+h1{
+    text-align: center;
+    color: rgb(red, green, blue);
+    text-shadow: 2px 2px 8px black ;
+    text-transform: uppercase;
+}
+
+h2{
+    color: #000000;
+
+
+}
+
+h3{
+    text-align: center;
+}
+
+section{
+    min-height: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+footer{
+    background-color: rgb(250, 250, 250);
+    height: 60px;
+    border: 1px solid black;
+    text-shadow: 2px 2px 6px black;
+}
+
+aside {
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    margin: 10px 10px 10px 10px;
+    
+}
+aside img{
+    width: 300px;
+    height: 300px;
+    padding: 10px 10px 10px 10px;
+}
+
+#form-elements{
+    text-align: center;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+
+/* ... Keyframe animation Starts Here ...*/
+
+#logo1 {
+    width: auto;
+    height: 20px;
+    background: rgb(245, 245, 245);
+    animation: do-anim 1s infinite;
+  }
+  
+  @keyframes do-anim {
+    10%   {top: 10px; background: rgb(5, 5, 5); width: auto;}
+    100% {top: 10px; background: rgb(0, 0, 0); width: auto;}
+  }

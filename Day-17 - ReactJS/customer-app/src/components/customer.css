@@ -1,0 +1,73 @@
+.table {
+    text-align: center;
+    color: blue;
+    border: black solid 1px;
+    width: 800px;
+    padding: 2px;
+}
+.table {
+    text-align: center;
+    color: blue;
+    border: black solid 1px;
+    width: 800px;
+    padding: 2px;
+}
+
+.table-header {
+    background-color: coral;
+    border: black solid 1px;
+    align-items: center;
+    color: black;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.table-body{
+    font-size: 18px;
+    background-color: coral;
+    border: black solid 1px;
+    color: black;
+}
+.table-body > td{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.button-del {
+    background-color: coral;
+    border: black solid 1px;
+    color: black;
+}
+
+.cust-form {
+    width: 800px;
+    margin-top: 80px;
+    padding-top: 40px;
+    margin-bottom: 40px;
+    border: black solid 1px;
+    color: black;
+}
+
+#cust-btn{
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 280px;
+    margin-bottom: 40px;
+    background-color: coral;
+    border: black solid 1px;
+    color: black;
+    width: 200px;
+    height: 30px;
+
+}
+.cust-btn{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    background-color: coral;
+    border: black solid 1px;
+    color: black;
+    width: 200px;
+    height: 30px;
+
+}

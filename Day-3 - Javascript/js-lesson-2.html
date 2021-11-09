@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Day 3 - Javascript Lessons</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+
+    <body>
+        <header>
+            <h1>Day 3 - Javascript Lessons</h1>
+        </header>
+
+
+        <section>
+
+            <h2>Javascript - Variable and Arrays</h2>
+
+            <div id="content">
+                <input type="text" id="operant-1"/>
+                <input type="text" id="operant-2"/>
+                <h1 id="result">Result</h1><br><br>
+
+                <button onclick="doMath('ADD')">Addition</button>
+                <button onclick="doMath('SUB')">Subtraction</button>
+                <button onclick="doMath('MUL')">Multiplication</button>
+                <button onclick="doMath('DIV')">Division</button><br><br>
+
+               
+                <h2>Object - Trainee Details:</h2>
+                <h3 id="trainee-details"></h3><br><br>
+
+                <h2>Array - Toys:</h2>
+                <h3 id="toys"></h3><br><br>
+
+                <h1>String Manipulation:</h1>
+
+                <h2>String Length: ABCDEFGHIJKLMNOPQRSTUVWXYZ</h2>
+                <h3 id="str-len"></h3><br><br>
+
+                <h2>String Slice(): Welcome to UST</h2>
+                <h3 id="str-slice"></h3><br><br>
+
+                <h2>substring(): Welcome to UST</h2>
+                <h3 id="str-substing"></h3><br><br>
+
+                <h2>substr(): Welcome to UST</h2>
+                <h3 id="str-substr"></h3><br><br>
+
+                <h2>replace(): HTML learning.</h2>
+                <h3 id="str-replace"></h3><br><br>
+
+                <h2>concat(): HTML learning.</h2>
+                <h3 id="str-concat"></h3><br><br>
+
+                <h2>Object - Student Details:</h2>
+                <h3 id="student-details"></h3><br><br>
+
+            </div>
+
+        </section>
+
+       
+
+        <footer>
+            <h3>Javascript - Lessons | Copyright@2021 | www.ust.com</h3>
+        </footer>
+
+
+        
+        <script type="text/Javascript">
+
+        // Mathematical Operations...
+        function doMath(opr){
+
+            let x = document.getElementById("operant-1").value;
+            let y = document.getElementById("operant-2").value;
+
+            switch (opr) {
+
+                case "ADD":
+                    var result = Number(x) + Number(y);
+                    document.getElementById("result").innerHTML = result;                   
+                break;
+
+                case "SUB":
+                    var result = Number(x) - Number(y);
+                    document.getElementById("result").innerHTML = result;       
+                break;
+
+                case "MUL":
+                    var result = Number(x) * Number(y);
+                    document.getElementById("result").innerHTML = result;
+                break;
+
+                case "DIV":
+                    var result = Number(x) / Number(y);
+                    document.getElementById("result").innerHTML = result;
+                break;
+            
+                default:
+                    document.getElementById("result").innerHTML = "Please input values!";
+                    break;
+            }
+        }
+
+
+
+        // Object - Trainee Details...
+        const trainee = {
+            traineeName: "Bob",
+            education: "SE",
+            joiningdate: "2021",
+            location: "Cochin",
+        }
+        document.getElementById("trainee-details").innerHTML = "Name: " + trainee.traineeName + ", Education: " + trainee.education + ", Joining Date: " + trainee.joiningdate + ", Location: " + trainee.location;
+        
+
+        // Array - Toys Details...
+        const toys = ["Car", "Bike", "Bicycle", "Truck"];
+        document.getElementById("toys").innerHTML = toys;
+
+        // String length...
+        let str1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        document.getElementById("str-len").innerHTML = str1.length + " Characters.";
+
+        // String slice...
+        let str2 = "Welcome to UST";
+        document.getElementById("str-slice").innerHTML = str2.slice(11,14);
+
+        // String substing...
+        let str3 = "Welcome to UST";
+        document.getElementById("str-substing").innerHTML = str3.substring(3,7);
+
+        // String substr...
+        let str4 = "Welcome to UST";
+        document.getElementById("str-substr").innerHTML = str4.substr(3,7);
+
+        // String replace...
+        let str5 = "HTML learning.";
+        document.getElementById("str-replace").innerHTML = str5.replace("HTML", "Javascript");
+
+        // String concatination...
+        let str6 = "HTML";
+        let str7 = " And Javascript";
+        document.getElementById("str-concat").innerHTML = str6.concat(str7);
+
+        // Object - Student Mark Details...
+        const student = {
+            name: "Bob",
+            rollno: 1001,
+            maths: 60,
+            science: 70,
+            english: 80,
+            studdetails: function (){
+                return Number(this.maths) + Number(this.science) + Number(this.english);
+            }
+        }
+        document.getElementById("student-details").innerHTML = "Name: " + student.name + ", Roll No: " + student.rollno + ", Total Marks: " + student.studdetails();
+
+        </script>
+
+    </body>
+</html>

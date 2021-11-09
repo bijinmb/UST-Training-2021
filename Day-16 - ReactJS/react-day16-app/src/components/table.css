@@ -1,0 +1,22 @@
+.table {
+    text-align: center;
+    color: blue;
+    border: black solid 1px;
+    width: 600px;
+    padding: 2px;
+}
+
+.table-header {
+    background-color: coral;
+    border: black solid 1px;
+    align-items: center;
+    color: black;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.table-body {
+    background-color: coral;
+    border: black solid 1px;
+    color: black;
+}

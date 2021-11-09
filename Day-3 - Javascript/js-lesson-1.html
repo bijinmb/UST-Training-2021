@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Day 3 - Javascript Lessons</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+
+    <body>
+        <header>
+           
+ 
+             <h1>Day 3 - Javascript Lessons</h1>
+        </header>
+
+
+        <section>
+            <h2>InnerHTML - Demo</h2>
+            <div id="content"></div><br>
+            <button onclick="addText()">Add Content</button>
+            <button onclick="removeText()">Remove Content</button>
+    
+        </section>
+
+        <section>
+            <h2>document.write() - Demo</h2>
+            <button onclick="docWrite()">Write</button>
+         
+        </section>
+
+        <section>
+            <h2>Alert() - Demo</h2>
+            <button onclick="doAlert()">Write</button>
+         
+        </section>
+
+        <section>
+            <h2>Console Log - Demo</h2>
+            <button onclick="doConsoleLog()">Write</button>
+         
+        </section>
+
+        
+
+        <footer>
+            <h3>Javascript - Lessons | Copyright@2021 | www.ust.com</h3>
+        </footer>
+        
+        <script type="text/Javascript">
+
+            function addText() {
+                
+                document.getElementById("content").innerHTML = "Content added through javascript.";
+         
+            }
+
+            function removeText() {
+
+                document.getElementById("content").innerHTML = "";
+            }
+
+            function docWrite(){
+                document.write("Hello");
+            }
+
+            function doAlert(){
+                alert("This is an Alert Message");
+            }
+
+            function doConsoleLog(){
+                console.log("This is message is logged to console.");
+            }
+
+        </script>
+
+    </body>
+</html>

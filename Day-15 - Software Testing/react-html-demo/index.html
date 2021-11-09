@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js" crossorigin></script>
+</head>
+<bod>
+    <div id="mydiv"></div>
+
+    <div id='root'></div>
+    <div id="mydiv"></div>
+    <div id='nm'></div>
+    <div id='nmes'></div>
+    <script type="text/babel">
+
+
+        function tick() {
+            const element = (
+                <div>
+                    <h1>Hello, world!</h1>
+                    <h2>Now time is {new Date().toLocaleTimeString()}.</h2>
+                </div>
+            );
+            ReactDOM.render(element, document.getElementById('root'));
+        }
+
+        setInterval(tick, 2000);
+
+        function Hello() {
+            return <div><h1>Hello World!</h1> <h2> React app</h2></div>;
+        }
+        ReactDOM.render(<Hello />, document.getElementById('mydiv'));
+        function Welcome(props) {
+            return <h1>Hello, {props.name}</h1>;
+        }
+        const element = <Welcome name="Alex" />;
+        ReactDOM.render(
+            element,
+            document.getElementById('nm')
+        );
+        function Greeting(props) {
+            return <h1>Hello, {props.name}</h1>;
+        }
+
+        function App() {
+            return (
+                <div>
+                    <Greeting name="Bob" />
+                    <Greeting name="Rahul" />
+                    <Greeting name="John" />
+                </div>
+            );
+        }
+
+        ReactDOM.render(<App />, document.getElementById('nmes'));
+    </script>
+
+    </script>
+</bod>
+
+</html>

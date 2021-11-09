@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Day 3 - Javascript Lessons</title>
+        <link rel="stylesheet" href="style.css"/>
+        
+    </head>
+
+    <body>
+        <header>
+            <h1>Day 4 - Javascript Lessons</h1>
+        </header>
+
+
+        <section>
+
+            <h2>Simple Interest - Calculator</h2>
+
+            <div id="content">
+                <form action="#">
+
+                    <label for="amount">Amount</label>
+                    <input type="input" id="amount">
+
+                    <label for="interest">Interest Rate</label>
+                    <input type="input" id="interest-rate">
+
+                    <label for="rate">Year(s)</label>
+                    <input type="input" id="years">
+
+                    <input type="submit"  onclick="calcSimpleInterest()"value="Calculate">
+
+                      <h1 id="si">Simple Interest:</h1>
+                      <h1 id="ta">Total Amount:</h1><br>
+        
+                </form>
+                
+
+                <h1 id="colors">Array Values: RED, GREEN, BLUE, ORANGE</h1>
+                <h1 id="color-result">Result</h1><br><br>
+
+                <button onclick="arrOperations('PUSH')">Push</button>
+                <button onclick="arrOperations('POP')">Pop</button>
+                <button onclick="arrOperations('SHIFT')">Shift</button>
+                <button onclick="arrOperations('UNSHIFT')">Unshift</button><br><br>
+
+
+                <h1 id="colors">Array Values: TIGER, RABBIT, COW, GOAT</h1>
+                <h1 id="animal-result">Result</h1><br><br>
+
+                <button onclick="animalOperations('ADD1ANIM')">Splice at LOC 3</button>
+                <button onclick="animalOperations('ADD3ANIM')">Add 3 new Animals @ LOC 2</button>
+                <button onclick="animalOperations('REM2ANIM')">Remove 2 Animals @ LOC 2</button><br><br>
+
+
+            </div>
+
+        </section>
+
+       
+
+        <footer>
+            <h3>Javascript - Lessons | Copyright@2021 | www.ust.com</h3>
+        </footer>
+
+
+        
+        
+    <script type="text/javascript" src="script.js"></script>
+
+    </body>
+</html>

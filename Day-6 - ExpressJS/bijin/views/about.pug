@@ -1,0 +1,21 @@
+extends layout
+
+block content
+    h1= title
+    p Welcome to #{desc}
+
+
+    img(src='/images/pug.jpg' widh='100px' height='100px' alt='pug')
+
+    h1 Address:
+    address #{addr}
+    form(method="get" action="/contact")
+         
+        h1 My Form
+        input(type="text" name="fname" placeholder="Input Name:")
+        select
+            option(value="a") A 
+            option(value="b" selected) B
+        button(type="submit") Submit 
+
+

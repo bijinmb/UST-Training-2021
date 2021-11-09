@@ -1,0 +1,14 @@
+{
+  "name": "jest-test-app",
+  "version": "1.0.0",
+  "description": "test case for jest test framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Bijin",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^27.3.1"
+  }
+}
