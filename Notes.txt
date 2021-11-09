@@ -1,0 +1,577 @@
+Team Names: 
+
+1. Jaguar
+2. Lords of codes
+3. Creative coders
+4. Code Ninjas
+
+Day 3 - Javascript:
+-------------------
+
+* var
+* const
+* let
+*  object with function.
+const employee{emp-id: 1001, emp-fname: "Alex", emp-lname: "Paul",  emp-desig: "SE", emp-full-name: function (){ return this.emp-fname + " " + this.emp-lname;}}
+
+const myObject = {
+  firstName:"John",
+  lastName: "Doe",
+  fullName: function () {
+    return this.firstName + " " + this.lastName;
+  }
+}
+
+// This will return "John Doe":
+myObject.fullName();  
+
+* Event - eg onclick, onload, onchange, onkeydown, etc..
+
+* String - escape characters like, \n , \t \ etc
+
+* String Manipulation Methods - substr, replace, slice, substing, concat, sort(), etc eg; str.substr(10,11)
+
+
+
+Practical - Questions:
+----------------------
+
+4. Define x, y variables and assign some values to them. Write expressions for adding, multiplying, difference, division of x,y.
+Show values in separate elements.
+
+5. Create a object of Trainees having properties like this: traineeName,education,joiningdate,location. Display the data in HTML element.
+
+6. Create an array of toys having names of toys and display it on an element.
+
+7. Create a string variable assign a long sentence to it. Use string length property to count no.of characters in the string. Use slice(), substring() and substr() to getany substring from the long string. Replace a sub string with a new string. Concatenate 2 string with concatenate().
+
+8. Create a object of student with name, rolno, mathsmarks, sciencmarks, englishmarks as property, define studentdetail property with a function which will calculate total marks and display all details of the student.
+
+Day 4 - Javascript:
+-------------------
+
+* Template Literals - back ticks ` ` can be used instead of quotes in the string and which this we can use multiline stings also in this.
+* String Interpolation - it interpolate stings, variables and expressions into a string, eg: `hello ${(10*2).fixedTo(2)}` 
+* Searching a string
+* str = startsWith("hello", 4), endsWith(), match(), indexOf("Hello"), includes() etc
+* Array methods: push(), pop(), shift(), unshift(), splice(), concat(),  
+* const points = [40, 100, 1, 5, 25, 10]; points.sort(function(a, b){return a - b}); - When the sort() function compares two values, it sends the values to the compare function, and sorts the values according to the returned (negative, zero, positive) value.
+* forEach() -  The forEach() method calls a function once for each element in an array, in order. forEach() is not executed for array elements without values.
+  const numbers = [65, 44, 12, 4];
+  numbers.forEach(myFunction)
+
+  function myFunction(item, index, arr) {
+    arr[index] = item * 10;
+  }
+*
+* array map() - The map() method creates a new array with the results of calling a function for every array element.
+  const numbers = [65, 44, 12, 4];
+  const newArr = numbers.map(myFunction)
+
+  function myFunction(num) {
+    return num * 10;
+  }
+  * date();
+  * Math methods: round(), ceil(); floor(), sqrt(), pow(), trunc(), 
+  * call(), apply(),
+  * for loop - const numbers = [65, 44, 12, 4]; for(let i =0; )
+  * class(), inheritance, constructor(), super() - constructor, present() methods
+  * getter() and setter() method
+  * functions running in parallel with other functions are called asynchronous.
+  * promise() - class
+  * Async() and await()
+  * HTML form validation - let x = document.forms["myForm"]["firstName"].value;
+  * arrow() function - hello = (val) => "hello world" + val; console.log(hello("demo"));
+
+
+
+
+Day 4 Hands on exercise on javascript:          07-10-2021
+----------------------------------------------------------
+
+1.Write a js function to calculate simple interest of principle amount, at a given interest rate and for number of years of duration. Show simple interest and total amount by using string interpolation technique.
+2.Write a function which will take an array of colors(names) and print all the colors on an element. Use pop(), push(),shift(), unshift() then again show the colors after each method.
+3.Write a function to accept an array of animals as parameter.
+Use the splice() to add a new animal at location 3 and show them. Again use splice() to add 3 new animals at location 2 and remove 2 existing animals  and show the result.
+4. Create a website for an electronics products company. They will sell TVs, Mobiles, Air conditioners, Washing machines, Laptops etc,.  Create Index/ home page for dashboard of the website with header having logo and name of the company.
+  Create a navigation bar with links to all web pages of the site.
+  Below that put a description about the company along some images. 
+  In the products page show all the products with images , description, price details.
+  In the service page describe what different services will be done and cost or free.
+  In the about us page put the address of the company.
+  In the contact us page collect the user details by using a form.
+  Use an external stylesheet and external javascript file for styling and behaviour of the webpages.
+
+Day 5 Hands on exercises                Date: 09-10-2021.
+----------------------------------------------------------
+Abdul blog url: https://askyedu.blogspot.com/
+
+1. Open REPL in cmd prompt. Create a function which will take 2 parameters firstname, lastname. Return fullname.
+2. Create a node.js file which creates a server and shows your name.
+3. Create user defined module having function which calculate sum of two numbers. Define another function which will take two arrays and return elements of two arrays as a single array. Create module consuming files and execute the same.
+4. fs.open(), fs.writeFile(), fs.unlink() - to delete a file., fs.rename(), fs.readFile(),
+5. event listener, 
+
+
+Day 6 - Express.js                Date: 11-10-2021.
+----------------------------------------------------------
+* npm install express --save - installs the dependant files in the new project.
+* Routing methods - get(), post(), app.all();
+* Route Paths -  in combination with a request method, defines end points at which request can be made. route path can be strings, strng pattern or reg expressions.
+  eg: app.get("/about", function(req, res)) will match request to about
+* Route parameters - 
+* chainable route handler
+
+* Express Application Generator: use npx command. Eg: npx express-generator.
+    Step 1: "npm init" - Create and initiate node js application.
+    Step 2: "npx express-generator"
+    Step 3: "npm install express --save" - Create and initiate node js application.
+    Step 4: "npm install pug --save" - if you want to install and use pug template engine.
+    Step 5: "npm install mysql --save" - if you want to install and use mysql template engine.
+    Step 6: "DEBUG=app_folder_name:* & nodemon start" or "DEBUG=app_folder_name:* & node start"
+
+    TIP: You can also install all at once by: npm install pug mysql express --save
+    
+
+* template engines pug, mustache, EJS works with Express, defaul is jade template engine. eg; "npm install pug --save"
+
+* HTML to PUG and PUG to HTML - Convertion tool URL: https://pughtml.com/
+
+Day 6 hands on exercises:
+
+1.  Create a folder with the name “HelloDemos”. Change to this directory and create an “ExpressHandsonApp” folder which is the app folder. Use command to create the app. Add dependencies of express to this app.
+    Write a code to create a server and run it.
+    Write HTTP methods like: get(), post() with path and call back functions.
+    Define 4 independent call back functions. Use these call back functions in get() as array.
+
+Day 7 - MVC & MySQL            Date: 12-10-2021.
+----------------------------------------------------------
+* MVC - Model, View , Controller - Software design pattern.
+    Model - connect/represent  data. Receives request from controller and sends processed data back to controller.
+    View - It deals with the presentation layer or the User Interface. View interact with the controller.
+    Controller - It act as a intermediary between model and view.
+
+* Database - is a collection of organized data. Operations like CRUD can be done on it.
+* NoSQL (Not only SQL) DB - MongoDB, CouchDB, Cloudant (Document - Based)
+  Memcached, Redis, Coherence (key-value store)
+  HBase, Big Table, Accumulo (Tabular)
+
+Day 7 : hands on exercises
+1.  Create a new express app with  my<name> app with a skeleton of the by using express dependencies. You can add in routes folder route methods for about us , contacus. 
+    Add view pages in the view folder which are connected to the route methods.
+    Display image on home page. Put some description in headings , paragraphs on the home page. 
+    In about us display address, contact us you can put some form to capture user information.
+
+2.  Create an Employee table with id (pK), empname, designation,salary, city columns. Insert 10 employees' data into the table. 
+    Select all rows and columns from the table.
+    Select employees of a particular city. 
+    Select employees of a particular designation. 
+    Select employees who are getting more than 30K. 
+    Select employees who are getting salaries between a range.
+    Show all the employees by sorting based on their salary.
+    Show all the employees by sorting based on designation.
+
+Day 8 - MySQL            Date: 13-10-2021.
+----------------------------------------------------------
+* Foreign key
+* join
+* sub query
+* Postman - tool for testing web API's
+* npm i mysql --save - to install mysql driver.
+
+Day 8 : hands on exercises
+
+Task 1.
+  Create a department table with id,deptname, location columns. 
+  Create a myEmployee table with empid, empname,jobrole,city, dept_id columns . dept_id column should reference deptid column of department table.
+  Insert data into department table and myemployee tables.
+  Select data from both tables independetly.
+  Create a join to fetch empname,jobrole,deptname,location from two tables.
+Task 2.
+  Create a express app to get connected with MySql database accessing a table rows in a database schema.
+  Display all the rows.
+  Display specific row by using id.
+
+Day 9 - ORM (Object Relationlal Mapping)            Date: 14-10-2021.
+-------------------------------------------------------------------------
+* It creates a virtual object database.
+* Sequilize is a promised-based NodeJS ORM.
+* npm install sequelize --save
+* MongoDB - Starting server: "brew services start mongodb-community"
+* MongoDB - Running Database: "mongosh"
+
+Day 9 hands on exercises:
+
+Task 1.
+  Create an CRUD operations app in Express. Write code to connect to the mysql database.  
+  Add a router file which contains methods to get all rows from the tables, 
+  get a single row based on id, 
+  insert a row into the table, 
+  update a column value in a row based on id, 
+  delete a row from the table based on id.
+
+Day 10 - MongoDB                                Date: 18-10-2021.
+-------------------------------------------------------------------------
+* command: brew
+* MongoDB shell: mongosh
+# Connection String: mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000
+* Exit: .exit
+* Create a database: use <db_name>; eg use inventory
+* Drop a database: db.dropDatabase(); 
+* Show Databases: show dbs
+* Swith to a database: use <db_name>
+* Create a table/collection: db.createCollection("Items");
+* List Collection/table:  show collections
+* Insert into document/row: db.<collection_name>.insert({title: "Borby"})
+* collection list: db.<collection_name>.find()
+* Drop a collection: db.<collection_name>.drop()
+* Update a document/row: db.<collection_name>.updateOne({rate: "1200"},{$set:{"rate": 100}})
+* Deleting a document/row: db.<collection_name>.findOneAndDelete({"title": "xman"}) 
+
+# brew install --cask mongodb-compass //to install client tool (Compass) for mongodb.
+
+# REST API
+* 
+
+Day 10 hands on exercises:
+
+1. Connect to the Mogosh shell. Create a database with your nameDb.
+  Create a collection of Books having title, description, price as properties.
+  Insert 4 books into the collection.
+  Display all books.
+  Update 3rd book price.
+  Delete 2nd book.
+
+2. Open MongoDbCompass GUI. connect to the local host. 
+  Create a database abcdDb and create a collection with the name trainee with properties : name, address, department, education.
+  Add some 10 documents to the collection.
+  Update any trainee’s department.
+  Delete a document of any trainee.
+  Export this collection as .csv & .json files. Import any json & .csv file to the collection.
+
+3. Create a rest api to do crud operations for a book schema having properties of title, price, author. 
+  Use models, routes folders in the app, Use mongoDb database.
+
+Day 11 - MongoDB                                Date: 19-10-2021.
+-------------------------------------------------------------------------
+* Nested schema and its operations
+* REST - Representatioal State Transfer, which used HTTP protocol.
+* REST API - CRUD - GET - to list, POST - to save, PATCH - to update, DELETE - to remove document 
+
+Day 11 Hands on exercises
+
+1. Create a rest api in express with required dependencies.
+  Create a schema as given below instructions:
+  A Customer schema: name will have firstname & last name, Email -id properties. 
+  Loction : nameof location, zipcode, cityname, statename. 
+  All CRUD operations must be done by the API
+
+2. Create a website on the concept of inventory management/ food catering /  festivals of india. HTML, CSS, javascript must be used for development of the website.
+  Index page, displaying product/ foods/ festival. Contact page, about us page. Description about product/ foods/ festival.
+
+3. Create a separate rest api  application for the above concept. A demo of the CRUD operations.
+
+Day 12 - File Uploading with Multer Middleware        Date: 20-10-2021.
+-------------------------------------------------------------------------
+
+* File Upload Module: npm install --save Multer
+* diskStorage() - engine gives control on storing files.
+* File Download Module: npm install download
+
+Day 12 Hands on exercises:
+
+1. Create a rest api to upload a file(images) to the server.
+2. Create a rest api with 2 models .
+  First model will have a schema on Snack to eat in the evenings.
+  Second model will have to use for file uploading.
+
+3. Create an app to download files(images) to your application folder. Use download and fs dependencies in your app.
+4. Create a rest api with MySQL database.
+  Create a database in Mysql with tables course, student, exams with relationships amongst the three tables.
+  To retrieve data from each individual table and write joins to retrieve data from student and course table, student and exam table.
+  Define relations by primary key and foreign keys for tables.
+
+Day 13 - User login/registration        Date: 21-10-2021.
+-------------------------------------------------------------------------
+* npm install bcryptjs --save
+* npm install jsonwebtoken --save
+* bcrypt - is a password-hashing function. It incorpate a salt to protect against rainbow table attacks.
+  It is an adaptive function so it remains resistant to brute force attacks.
+* Json Web Token (JWT)- way for securely transmitting information between parties and Json object.
+  JWT can be signed so can be used for securely transmitting information.
+* 
+
+Day 13 Hands on Exercises
+
+1. Create a REST Api to build user registration.  Root  application folder name is UserRegistrationApp. Add Models, controllers, routes folders. In the Models folder add user.js file.
+  In the controllers folder add ‘authcontroller.js’ file. In the routes folder add ‘auth.js’ file. At the root level add server.js file.
+
+  In the user.js file define userschema and export it.
+  In the authcontroller.js file import schema and define hashmethod to enctipt password and export module.
+  In the auth.js file  need to import authcontroller and export the router.
+  In server.js need to import the auth.js from router.
+
+  After completed all the functionalities run the application. Use postman to post data.
+
+Day 14 - JWT - Json Web Token        Date: 21-10-2021.
+-------------------------------------------------------------------------
+# JWT - reference URL: www.jwt.io
+* 
+
+Day 14 Hands on exercises:
+
+1. Create a rest api to do CRUD operations on the following schema.
+  A food selling company needs to create an api on their digitalization transformation.
+  
+  They will deal with different categories of foods.
+  The required schema will have a category table and a foodItems table.
+  Decide what are the columns needed in both tables and relate the tables with primary key and foreign keys.
+  Use MySql database as backend database.
+  Optionally you can also use Sequelize ORM to create the database. 
+
+Note: Refer MVC & Database  presentation or
+https://sequelize.org/master/manual/model-querying-finders.html   for how to use Sequelize ORM
+
+Day 15 - Software Testing   & React                Date: 25-10-2021.
+-------------------------------------------------------------------------
+* Unit Testing - to test the smallest unit of code in the application.
+* Jest - Test Framework for Javascript.
+* npm install jest --save
+* In the "scripts":{ "test": "jest"},
+* Mocha, Jasmine, Tape, Ava - other popular testing framework.
+* React - is a declarative, efficient and flexible JS library for building UI.
+* It uses small pieces of code called "components".
+* It uses ES6 - Ecmascript.
+* React creates a Virtual DOM in memory.
+* React changes what needs to be changed.
+* React in production needs npm and Node.js
+* React includes reactDOM and React in the html script tag. eg; react@17 and react-dom@17
+* In the body <script type="text/babel"> is needed.
+* Creating React APP: npx create-react-app <application name>
+* CD inside that app and then npm start.
+* JSX - Is a syntax extension to JS. JSX stand for JavaScript and XML.
+* JSX allows us to write HTML in React.
+* JSX - we can write experessions inside curly braces {}.
+* props, expression, compomemts, 
+* Components are two types: Class and Function Component and the component name must start with Upper case letter.
+* Props - It is a special keyword that is used in react stands for properties. 
+  Used for passing data from one component to another.
+* 
+
+Day 15 Hands on exercises:
+
+1. Create a react app in a folder. In src folder create components folder and add you component file as *.js.
+  In this file define a functional component called Greeting which will return an element with props.
+  Define another function called Getgreet() . This function will call the above Greeting as jsx.
+  Export Getgreet.
+  In the index.js import Getgreet. Call it in ReactDOM.render().
+
+
+Day 16 -  React JS                          Date: 26-10-2021.
+-------------------------------------------------------------------------
+* Conditional rendering.
+* React Hooks: 
+* React events: camelCase, eg; onClick={shoot} - calls the shoot function.
+
+
+
+Day 16 Hands on exercises:
+
+1. Create a reactapp with name day16-app  in a location and add components folder.
+  In component folder add table.js and table.css files.
+  Define Tableheader and Tablebody function components.
+  Define Table class component and add above two functions in the class component and export the component.
+  Define css style for the table in table.css file.
+  Import the Table component file (table.js) in the index.js file.
+  Call the Table component in the ReactDOM.render().
+
+2. Create any two components and make a decision,
+  with the if operator to call any one of the two components in another component. 
+
+  For example when a cricket match is played runs can be made or missed for a shot.
+  Define two components for Runsmade and Noruns.
+  Define a Runs component with props. isRun (boolean) and makes a decision.
+  To implement this, Call the Runs component inside the render() and pass it props.isRun = {value}.
+
+Day 17 -  React JS                            Date: 27-10-2021.
+----------------------------------------------------------------------
+* State Object - "setState" with this we can update a component. State can store data.
+* Forms, Spread operator "..." - It allows an array expression or string or anything which -
+  can be iterating to be expanded in places where zero or more arguments for function calls or elements for array are expected.
+
+
+Day 17 Hands on exercises:
+
+2 Create an app with the name customer-app.
+
+  Properties for customer : custname, city, phone, email.
+  Create a Form component with 4 text boxes and submit button.
+
+  Create a table header component for table heading for above properties of customer.
+  Create a table body component to have data from the table.
+  
+  Create a table component to have a table header and table body.
+  Create a setting data component which will form and table components.
+
+Day 18 -  React JS                            Date: 28-10-2021.
+----------------------------------------------------------------------
+* React Developer Toosl - Chrom extension
+* Life Cycle, Life cycle events - componentDidMount() - to mount the component, componentWillUnmount() - To unmount the component.
+* setInterval(), tick(),
+* fragments: to group a list of elements
+  <react.fragments></react.fragments> or shortcode <></>
+* Hooks: allow function components to have access to state and other react features.
+  class components are no longer needed.
+* useState - Hook: hook can be used to keep track of the strings, numbers, array, objects and its combiations.
+* useEffect - Hook: hook allows you to perform side effects in your components. eg; 
+* Context: it is a way to manage stage globally. Instead of using "props" we can pass data within the components. 
+  it can use used as a solution for "prop-drilling".
+* Create: "userState" and "createContext"
+  Context HooK: "useContext"
+ 
+
+Day 19 -  React JS                            Date: 29-10-2021.
+----------------------------------------------------------------------
+* useRef - Hook: useRef(initialValue) is a built-in React hook that accepts one argument as the initial value and returns a reference (aka ref).
+  A reference is an object having a special property current
+* useReducer - Hook: is similar to the useState hook. 
+  useReducer is usually preferable to useState when you have complex state logic that involves 
+  multiple sub-values or when the next state depends on the previous one.
+* The .map() method allows you to run a function on each item in the array, returning a new array as the result.
+  In React, map() can be used to generate lists.
+* The JavaScript spread operator (...) 
+  allows us to quickly copy all or part of an existing array or object into another array or object.
+
+Day 19 Hands on exercises:
+1. Create a component to implement iseRef Hook.
+2. Create an app  with components to implement useReducer Hook.
+3. Create a react-app to do the following.
+  Student need to input data through a form and data should be maintained by "useState" hooks. 
+  Display the data in tabular format. 
+  User data details are as follows: studentId, studentname, address, coursename.
+
+Day 20 -  React JS                            Date: 1-11-2021.
+----------------------------------------------------------------------
+* useCallback - Hook: Returns a memorized callback function.
+  This allows us to isolate resource intensive function so repetative calls can be avoided.
+* useMemo - Hook: Returns a memorized value. useMemo will only recompute the memoized value when one of the dependencies has changed. 
+  This optimization helps to avoid expensive calculations on every render.
+* customHook - 
+* 
+
+
+Day 21 -  React JS                            Date: 2-11-2021.
+----------------------------------------------------------------------
+* useEffect - They let you use state and other React features without writing a class.
+
+
+Day 21                                            Exam: 2hrs
+----------------------------------------------------------------------
+1. High Fashions is a company which deals in clothing. 
+  To maintain their inventory they need data in the following format.
+  Id, itemname, description, price, quantity, stockreceivedDate.
+
+  Create a react-app to do CRUD operations for the above description. 
+  
+  It will have separate forms for entering item details, editing an item or deleting an item. 
+
+  For displaying the entire inventory (all items) a tabular form will be there in which 
+  users can see filtered items based on name, price and can sort (ascending/ descending) 
+  based on name, price, stockreceivedDate.For every page 4 rows can be displayed. 
+  It should have a search box for every column to search the items.
+  Apply appropriate styling to all forms and tables.
+
+Day 22 -  Git, GitHub - Code repository | Redux   Date: 3-11-2021.
+----------------------------------------------------------------------
+* Git - CLI installaton
+* GitHub - CLI installation
+* Redux - is a state management solution for JavaScript apps. 
+  Generally, it is used in integration with React, but it functions with other React-like frameworks also.
+  For Redux, it has become possible to connect all components straight to the whole state and thereby, 
+  reduces the requirement for using call-backs or props.
+* It is a pattern and library for managing and updating application state, using events called "actions".
+* It helps you manage "global" state - state that is needed accross many parts of your application.
+* Action:
+* Redux expects that all state updates are done immutably (not changable).
+* Store: Current redux application state lives in an object called the store.
+* Dispatch: The only way to update the state is to call store.dispatch().
+* Selector: are functions that know how to extract specifc value of information from a store state value.
+* 
+* Creating a new Redux app:
+  Normal Template: npx create-react-app my-app --template redux
+  With TypeScript Template: npx create-react-app my-app --template redux-typescript
+  
+* Redux DevTools - For Googel Chrome - extension.
+
+* Create Redux APP: redux-thunk, dom, react-redux,  
+
+* CREATE Redux APP Commands:
+  1. npx create-react-app "app_name"
+  2. npm install @reduxjs/toolkit - inside the app folder adding dependencies.
+  3. npm install react-redux redux-thunk react-router-dom  //adding dependencies.
+
+Day 23 -  Testing - Jest | Git, GitHub - Code repository | Redux     Date: 5-11-2021.
+--------------------------------------------------------------------------------------
+* Create a redux application with actions, reducers, components and required data
+* npm test or npm run test - Testing command.
+* assert metods for tesing: 
+
+  eg: expect(listElements).toBeInTheDocument();
+  expect(listElements).toHaveClass('animals');
+  expect(listItems.length).toEqual(5);
+* screen.debug() : to see the HTML output of the screen element.
+* Query methods for testing elements:
+ getBy\* : categories -> getyByText, getByRole, getByLableText, getByAltText, getByDisplayValue
+ getByALL\* : 
+ queryBy\* : categories -> queryByText, queryByRole etc
+ queryAllBy\*
+ findBy\*
+* If none of the above mentioned query methods allows to select element then we can use
+"data-testid" in the html element eg: <h1 data-testid="test-123">Hello</h1>
+
+Day 24 -  Cloud Computing                     Date: 8-11-2021.
+----------------------------------------------------------------------
+* Cloud computing is a network of remote servers hosted on the internet
+  for storing and retrieving data.
+
+* Cloud provides a number of IT services such as servers, databases, software, virtual storage and n/w.
+* Benifits: Speed, Cost, Scalability, Accessibility, Security.
+* Advantages: High Availability, Scalability, Elasticity, Agility, Geo-distribution, Disaster Recovery.
+* Cloud Models:
+  Public Cloud - No capital expenses CapEx to scale update.
+  Application can be quickly provisioned and deprovisioned.
+  Organizations pay only for what they use.
+  Private Cloud - 
+  Hybrid Cloud - 
+* Cloud Services: 
+
+*IaaS - Infrastructure as a service
+  It is the most flexible category of the cloud services.
+  Consumption based model.
+
+*PaaS - Platform as a service
+  
+*SaaS - Software as a service.
+  No CapEx. User has no up-front costs.
+  Agility. Users can provide staff with access to the latest s/w quickly and easily.
+  Pay-as-you-go pricing model.
+  Flexibility - users can access the same application data from anywhere.
+  Disadvantage: there might be some feature missing or can't be brought in to the software other than what they provide.
+
+* Serverless Computing: enables developers to build their application faster by eliminating the need for them to manage Infrastructure.
+  with Serverless applicatations, the cloud service provider automatically provisions, scales, and manages the Infrastructure.
+
+* Azure Marketplace - To buy azure products. All the softwares can be purchased from there which is optimized to run on azure platform.
+* Azure services: Compute, N/w, Storage, Mobile, DB, Web, IoT, AI, Big Data etc.
+* Region: is made up of data centers located around the globle.
+* Region Pair: Azure region is always paired with another region within the same geography.
+* 
+
+Day 25 -  Cloud Computing  - Azure                   Date: 9-11-2021.
+----------------------------------------------------------------------
+* Azure - Its a manageable item available through Azure. Resource and Resource Manager
+* Resource Manager Connection via - Azure portal, Azzure Power Shell, Azure CLI, REST Clients.
+* Azure Subscription: Provides with authentication and authorized access to Azure products and services.
+* An Azure subscriptoin is a logical unit of Azure service that links to an Azure account.
+* TOC - Calculator
+
