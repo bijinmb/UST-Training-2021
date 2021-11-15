@@ -2,7 +2,7 @@ Team Names:
 
 1. Jaguar
 2. Lords of codes
-3. Creative coders
+3. Creative coders --
 4. Code Ninjas
 
 Day 3 - Javascript:
@@ -574,4 +574,68 @@ Day 25 -  Cloud Computing  - Azure                   Date: 9-11-2021.
 * Azure Subscription: Provides with authentication and authorized access to Azure products and services.
 * An Azure subscriptoin is a logical unit of Azure service that links to an Azure account.
 * TOC - Calculator
+
+
+1. What you mean by Azure Resources?
+Ans: Resources are instances of service that you create, like VM, Storage, DB etc.
+2. What you mean by Azure Resource Groups?
+Ans: Resources are combined into resource groups, which act as a logical container into which Azure resources like web apps, db, storage accounts are deployed and managed.
+3. What do you mean by Azure Subscriptions?
+Ans: A subscription groups together user accounts and the resources that have been created by those user accounts.
+4. Name a few Azure global services which doesn't need a particular region?
+Ans: Azure Active Directory, Azure Traffice Manager, Azure DNS etc.
+
+Day 26 -  GitHub                                    Date: 10-11-2021.
+----------------------------------------------------------------------
+* Need to follow this GitHub tutorial URL: https://docs.microsoft.com/en-us/learn/modules/introduction-to-github/3-introduction-to-github
+* CI - continuous integration: is the practice of automating the integration of code changes from multiple contributors into a single software project. 
+  It's a primary DevOps best practice, allowing developers to frequently merge code changes into a central repository where builds and tests then run.
+* Continuous integration (CI) is the process of automating the build and testing of code every time a team member commits changes to version control.
+* URL: https://docs.microsoft.com/en-us/learn/modules/create-a-build-pipeline/1-introduction
+* Build Pipleline
+* Build Agent:
+*Azure Pipelines: Microsoft Azure Pipelines is a cloud service that you can use to automatically build, test, and deploy your code project.
+ You can also make it available to other users. And it works with just about any language or project type.
+* A pipeline defines the continuous integration process for the app. It's made up of steps called tasks  . It can be thought of as a script that defines how your build, test, and deployment steps are run. I'm going to try to map our scripts to tasks.
+
+The pipeline runs when you submit code changes  . You can configure the pipeline to run automatically, or you can run it manually. You connect your pipeline to a source repository like GitHub, Bitbucket, or Subversion. We'll use GitHub. One of our tasks for this sprint is to start using GitHub.
+
+A build agent  builds or deploys the code. When your build or deployment runs, the system begins one or more jobs. An agent is installable software that runs one build or deployment job at a time. Because we're using Azure Pipelines, we can use a Microsoft-hosted agent. With Microsoft-hosted agents, maintenance and upgrades are taken care of for us. Each time we run a pipeline, we'll get a fresh virtual machine. There are several virtual machine images to choose from, including Ubuntu 20.04, which is what we use.
+
+The final product of the pipeline is a build artifact  . Think of an artifact as the smallest compiled unit that we need to test or deploy the app. For example, an artifact can be:
+
+
+Details
+Job
+1 error(s), 0 warning(s)
+	No hosted parallelism has been purchased or granted. To request a free parallelism grant, please fill out the following form https://aka.ms/azpipelines-parallelism-request
+
+Day 27 -  Azure IoT Module                            Date: 11-11-2021.
+----------------------------------------------------------------------
+* URL: https://docs.microsoft.com/en-us/learn/modules/iot-fundamentals/6-use-azure-sphere
+* Azure IoT hub is a managed service that's hosted in the cloud and that act as a central message hub
+for bi-drectional communication between your IoT application and the device it manages.
+* Azure Sphere 3 parts: 
+1. The first part is the Azure Sphere micro-controller unit (MCU), which is responsible for processing the operating system and signals from attached sensors. 
+2. The second part is a customized Linux operating system (OS) that handles communication with the security service and can run the vendor's software.
+3. The third part is Azure Sphere Security Service, also known as AS3. Its job is to make sure that the device has not been maliciously compromised. When the device attempts to connect to Azure, it first must authenticate itself, per device, which it does by using certificate-based authentication. 
+* Azure IoT Hub: is a managed service that's hosted in the cloud and that acts as a central message hub for bi-directional communication between your IoT application and the devices it manages. 
+  You can use Azure IoT Hub to build IoT solutions with reliable and secure communications between millions of IoT devices and a cloud-hosted solution back end. You can connect virtually any device to your IoT hub.
+* Azure IoT Central: builds on top of IoT Hub by adding a dashboard that allows you to connect, monitor, and manage your IoT devices. 
+  The visual user interface (UI) makes it easy to quickly connect new devices and watch as they begin sending telemetry or error messages.
+* Azure Sphere: creates an end-to-end, highly secure IoT solution for customers that encompasses everything from the hardware and operating system on the device to the secure method of sending messages from the device to the message hub. 
+  Azure Sphere has built-in communication and security features for internet-connected devices.
+
+  Day 28 -  Azure Hosting Plans                      Date: 12-11-2021.
+----------------------------------------------------------------------
+* Consumption plan, Premium Plan, Dedicatd plan, ASE, Kubernetes - container services, Azure ARC
+* KEDA - Kubernetes based Event Driven Auto scaling  
+* Azure Functions URL: https://docs.microsoft.com/en-us/azure/azure-functions/functions-scale
+* Kubernetes Functions URL: https://docs.microsoft.com/en-us/azure/azure-functions/functions-kubernetes-keda
+* Best coding practice in javascript URL: https://github.com/ryanmcdermott/clean-code-javascript
+* For node, express, react, mongodb implementation
+URL: https://www.bezkoder.com/react-node-express-mongodb-mern-stack/
+
+
+
 
